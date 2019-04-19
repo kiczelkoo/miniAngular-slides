@@ -27,3 +27,10 @@ p.author-signature {
     text-align: right;
     font-style: italic;
 }
+
+div.overlay {
+    padding: 10px;
+    border-radius: 20px;
+    background: black;
+    background: rgba(0,0,0,0.3);
+}
