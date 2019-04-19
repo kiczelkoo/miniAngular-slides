@@ -1,0 +1,29 @@
+.reveal section img {
+    border: 0 none;
+    background: none;
+    box-shadow: none;
+}
+
+.reveal section img.angular-logo {
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 -19px 0;
+}
+
+li.pros, li.cons {
+    list-style: none;
+}
+
+li.pros:before {
+    content: "+ ";
+}
+
+li.cons:before {
+    content: "- ";
+}
+
+p.author-signature {
+    text-align: right;
+    font-style: italic;
+}
