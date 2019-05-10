@@ -16,11 +16,15 @@ li.pros, li.cons {
 }
 
 li.pros:before {
-    content: "+ ";
+    content: "＋";
+    left: 10px;
+    position: absolute;
 }
 
 li.cons:before {
-    content: "- ";
+    content: "－";
+    left: 10px;
+    position: absolute;
 }
 
 p.author-signature {
@@ -33,4 +37,26 @@ div.overlay {
     border-radius: 20px;
     background: black;
     background: rgba(0,0,0,0.3);
+}
+div.diagram {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-around;
+}
+div.diagram>div {
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    padding: 10px 5px 5px 5px;
+    margin: 0px 10px 0px 10px;
+    border: grey solid 5px;
+    background-color: whitesmoke;
+    color: black;
+}
+div.diagram h1,div.diagram h2,div.diagram h3,div.diagram h4,div.diagram h5 {
+    color: darkblue;
+}
+div.diagram ul,div.diagram p {
+    font-size: 30px;
 }
