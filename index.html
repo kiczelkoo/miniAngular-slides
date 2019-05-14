@@ -32,12 +32,12 @@
         </section>
 
         <section data-background-image="img/harold.jpg">
-            <div class="overlay fragment">
-                <h4 class="fragment">Harold is asked to migrate an old style web app into modern cutting edge Angular something...</h4>
+            <div class="overlay fragment" data-fragment-index="1">
+                <h4 class="fragment" data-fragment-index="1">Harold is asked to migrate an old style web app into modern cutting edge Angular something...</h4>
                 <ul>
-                    <li class="fragment">we want to have complex dynamics on our pages</li>
-                    <li class="fragment">we can easily test UI written in Angular</li>
-                    <li class="fragment">server-generated HTML pages are no longer "sexy"</li>
+                    <li class="fragment" data-fragment-index="2">we want to have complex dynamics on our pages</li>
+                    <li class="fragment" data-fragment-index="2">we can easily test UI written in Angular</li>
+                    <li class="fragment" data-fragment-index="2">server-generated HTML pages are no longer "sexy"</li>
                 </ul>
             </div>
         </section>
@@ -63,9 +63,9 @@
             <section>
                 <h5>if only we could migrate gradually...</h5>
                 <ul>
-                    <li class="pros fragment">we could deliver small chunks on regular basis</li>
-                    <li class="pros fragment">in pair with continuous delivery & deployment</li>
-                    <li class="pros fragment">no cancellation risk: code is already there</li>
+                    <li class="pros fragment" data-fragment-index="1">we could deliver small chunks on regular basis</li>
+                    <li class="pros fragment" data-fragment-index="1">in pair with continuous delivery & deployment</li>
+                    <li class="pros fragment" data-fragment-index="1">no cancellation risk: code is already there</li>
                     <li class="cons fragment">two technologies mixed for some (long) time</li>
                 </ul>
             </section>
@@ -84,7 +84,7 @@
         <section>
             <h3>The idea</h3>
             <div class="diagram">
-                <div>
+                <div class="fragment" data-fragment-index="1">
                     <h4>Spring MVC</h4>
                     <ul>
                         <li>server side rendering</li>
@@ -93,7 +93,8 @@
                         <li>maybe some AJAX calls</li>
                     </ul>
                 </div>
-                <div class="fragment">
+                <img src="img/arrow-right.svg" alt="rght" class="fragment" width="50" data-fragment-index="2">
+                <div class="fragment" data-fragment-index="2">
                     <h4>Hybrid</h4>
                     <ul>
                         <li>Angular as JS library</li>
@@ -102,7 +103,8 @@
                         <li>One by one migration</li>
                     </ul>
                 </div>
-                <div class="fragment">
+                <img src="img/arrow-right.svg" alt="rght" class="fragment" width="50" data-fragment-index="3">
+                <div class="fragment" data-fragment-index="3">
                     <h4>SPA</h4>
                     <ul>
                         <li>All pages are Angular components</li>
