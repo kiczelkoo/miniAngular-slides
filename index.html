@@ -36,14 +36,14 @@
             </section>
         </section>
 
-        <section data-background-image="img/harold.jpg">
-            <div class="overlay fragment" data-fragment-index="1">
-                <h4 class="fragment" data-fragment-index="1">Harold is asked to migrate an old style web app into modern
+        <section data-background-image="img/harold.jpg" data-transition="slide" data-transition-speed="slow">
+            <div class="overlay">
+                <h4>Harold is asked to migrate an old style web app into modern
                     cutting edge Angular something...</h4>
                 <ul>
-                    <li class="fragment" data-fragment-index="2">we want to have complex dynamics on our pages</li>
-                    <li class="fragment" data-fragment-index="2">we can easily test UI written in Angular</li>
-                    <li class="fragment" data-fragment-index="2">server-generated HTML pages are no longer "sexy"</li>
+                    <li>we want to have complex dynamics on our pages</li>
+                    <li>we can easily test UI written in Angular</li>
+                    <li>server-generated HTML pages are no longer "sexy"</li>
                 </ul>
             </div>
         </section>
@@ -177,7 +177,8 @@
         ]
     });
     Reveal.configure({
-        slideNumber: 'c/t'
+        slideNumber: 'c/t',
+        transition: 'fade'
     });
 </script>
 </body>
