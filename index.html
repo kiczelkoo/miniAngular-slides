@@ -27,8 +27,13 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h3>Gradual migration to <img class="angular-logo" src="img/angular.svg" alt="A">ngular</h3>
-            <p>Case study by Olga Kichewko & Maciek Małecki</p>
+            <section>
+                <h3>Gradual migration to <img class="angular-logo" src="img/angular.svg" alt="A">ngular</h3>
+                <p>Case study by Olga Kichewko & Maciek Małecki</p>
+            </section>
+            <section>
+                <h1 class="huge">SPA</h1>
+            </section>
         </section>
 
         <section data-background-image="img/harold.jpg">
@@ -41,20 +46,11 @@
                     <li class="fragment" data-fragment-index="2">server-generated HTML pages are no longer "sexy"</li>
                 </ul>
             </div>
-            <aside class="notes">
-                <p>
-                    Niezależnie od motywacji, szybki rozwój technologii frontentowych wymusza konieczność częstej
-                    migracji albo konieczność ustawicznego przepisywania frontendu do coraz to nowszych technologii.
-                </p>
-                <p>
-                    To nie jest jedynie "moda", ale także zupełnie nowe możliwości z dziedziny UX.
-                </p>
-            </aside>
         </section>
 
         <section>
             <section>
-                <h1>Possible approaches</h1>
+                <h1>Possibilities</h1>
             </section>
             <section>
                 <h2>Big bang</h2>
@@ -65,19 +61,6 @@
                     <li class="cons fragment" data-fragment-index="2">"chase the rabbit"</li>
                     <li class="cons fragment" data-fragment-index="2">necessity to use two apps</li>
                 </ul>
-                <aside class="notes">
-                    <p>
-                        Podejście jest czyste, ale ryzykowne.
-                    </p>
-                    <p>
-                        Chase the rabbit - równolegle to procesu tworzenia nowej wersji UI, stare UI wciąż jest
-                        rozwijane. Musimy nie tylko przepisywać istniejącą funkcjonalność, ale także wciąż dodawać nową.
-                    </p>
-                    <p>
-                        W praktyce być może wypuścimy nową wersję, ale okrojoną funkcjonalnie. Użytkownicy wciąż
-                        będą musieli posiłkować się starą aplikacją, co ma wielki negatywny wpływ na UX.
-                    </p>
-                </aside>
             </section>
             <section>
                 <p>"<em>Big bang</em> approach fails by definition for bigger projects."</p>
@@ -92,34 +75,26 @@
                     <li class="pros fragment" data-fragment-index="1">no cancellation risk: code is already there</li>
                     <li class="cons fragment">two technologies mixed for some (long) time</li>
                 </ul>
-                <aside class="notes">
-                    <p>
-                        Początkowo dodajemy jedynie nową technologię, wizualnie zmiany są praktycznie niewidoczne.
-                        Użytkownicy boją się drastycznych i rewolucyjnych zmian.
-                    </p>
-                    <p>
-                        Niewielki wpływ na proces wydawniczy.
-                    </p>
-                    <p>
-                        Nie musimy się ścigać z nowymi funkcjami - te będą dodawane albo do starego UI (i potem
-                        zmigrowane) albo do nowego.
-                    </p>
-                </aside>
             </section>
         </section>
 
         <section>
-            <h4>Our case: continuous delivery & deployment</h4>
-            <ul>
-                <li>Working (almost) always on short living branches</li>
-                <li>Kanban - no sprints</li>
-                <li>Automatic deployment on test environment</li>
-                <li>Production releases at least once per week</li>
-            </ul>
+            <section>
+                <h1>Let's complicate our case</h1>
+            </section>
+            <section>
+                <h2>CI/CD</h2>
+                <ul>
+                    <li>Working (almost) always on short living branches</li>
+                    <li>Kanban - no sprints</li>
+                    <li>Automatic deployment on test environment</li>
+                    <li>Production releases at least once per week</li>
+                </ul>
+            </section>
         </section>
 
         <section>
-            <h3>The approach</h3>
+            <h3>Our approach</h3>
             <div class="diagram">
                 <div class="fragment" data-fragment-index="1">
                     <h4>Spring MVC</h4>
@@ -155,6 +130,16 @@
         <section>
             <h1>Demo time</h1>
             <img src="img/we-can-rebuild.jpg" alt="">
+        </section>
+
+        <section>
+            <h2>Tricky parts</h2>
+            <ul>
+                <li>Communication between Thymeleaf and Angular</li>
+                <li>Angular's root component</li>
+                <li>Angular resources versioning</li>
+                <li>Developers mode</li>
+            </ul>
         </section>
 
         <section>
