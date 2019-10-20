@@ -81,14 +81,6 @@ div.diagram ul,div.diagram p {
 div.rights {
     font-size: small;
 }
-div.flex {
-    display: flex;
-    justify-content: space-between;
-}
-div.flex>div {
-    margin-right: 10px;
-    margin-left: 10px;
-}
 .align-left {
     text-align: left;
 }
