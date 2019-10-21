@@ -87,3 +87,23 @@ div.rights {
 .underline {
     text-decoration: underline;
 }
+.reveal section div.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.reveal section div.tiles > div > img {
+    border-style: none;
+    border-width: 0px;
+    background: rgba(255,255,255,0);
+    height: 100px;
+    margin: 5px;
+}
+.reveal section div.tiles > div > p {
+    font-size: large;
+    margin: 2px;
+}
