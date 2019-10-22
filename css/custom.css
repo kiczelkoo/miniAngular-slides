@@ -10,6 +10,12 @@
     position: relative;
     margin: 0 0 -19px 0;
 }
+.reveal section img.eventory-logo {
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 -19px 0;
+}
 .reveal section img.skull {
     width: 70px;
     margin: 0 0 -19px 0;
@@ -105,5 +111,8 @@ div.rights {
 }
 .reveal section div.tiles > div > p {
     font-size: large;
-    margin: 2px;
+    margin: 0px 0px 18px 0px;
+}
+h3.fancy {
+    margin-top: 35px;
 }
